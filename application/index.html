@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de projetos de tecnologia - Laboratório 03 do Terraform na Prática.">
+  <title>Portfólio | Terraform na Prática</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <span class="brand">&lt;portfólio /&gt;</span>
+    <span class="env" id="env-badge" aria-label="Ambiente">ambiente</span>
+  </header>
+
+  <section class="intro" id="inicio">
+    <p class="hello">Olá, eu sou</p>
+    <h1 id="nome">Carregando...</h1>
+    <p class="headline" id="headline"></p>
+    <p class="bio" id="bio"></p>
+  </section>
+
+  <main>
+    <section aria-labelledby="t-projetos">
+      <h2 id="t-projetos">Projetos AWS</h2>
+      <div class="grid" id="projetos"></div>
+    </section>
+
+    <section aria-labelledby="t-tech">
+      <h2 id="t-tech">Tecnologias</h2>
+      <ul class="chips" id="tecnologias"></ul>
+    </section>
+
+    <section aria-labelledby="t-contato">
+      <h2 id="t-contato">Contato</h2>
+      <p class="nota">Links demonstrativos configurados por variáveis do Terraform.</p>
+      <ul class="links" id="contatos"></ul>
+    </section>
+
+    <p id="erro" class="erro" role="alert" hidden></p>
+  </main>
+
+  <footer class="footer">Terraform na Prática &middot; Etapa 1 &middot; Módulo 03</footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+# Copie para "terraform.tfvars" (ignorado pelo Git) para o Terraform carregá-lo
+# automaticamente:
+#   Copy-Item terraform.tfvars.example terraform.tfvars
+#
+# Substitua os valores de exemplo pelos seus. Tudo aqui vira conteúdo PÚBLICO
+# do site (config.json). Não coloque dados que você não queira publicar.
+
+project_prefix = "tfpratica-m03"
+environment    = "dev"
+owner          = "aluno"
+
+profile = {
+  name     = "Seu Nome"
+  headline = "Engenheiro(a) de Nuvem em formação"
+  bio      = "Estudando Terraform na prática e publicando infraestrutura como código."
+}
+
+technologies = ["Terraform", "Amazon S3", "Amazon CloudFront", "AWS CLI", "Git"]
+
+contact_links = {
+  GitHub   = "https://github.com/exemplo"
+  LinkedIn = "https://www.linkedin.com/in/exemplo"
+  Email    = "mailto:contato@example.com"
+}
+
+extra_tags = {
+  Curso = "terraform-na-pratica"
+}

@@ -1,0 +1,65 @@
+:root {
+  --bg: #fbfaf7;
+  --texto: #222;
+  --suave: #666;
+  --laranja: #ff7a1a;
+  --escuro: #1d2433;
+  --borda: #e8e4da;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+.top {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 1.5rem; background: var(--escuro); color: #fff;
+}
+.brand { font-family: Consolas, monospace; font-weight: 700; }
+.env {
+  background: var(--laranja); color: #1d1100; font-weight: 700; font-size: 0.8rem;
+  text-transform: uppercase; padding: 0.2rem 0.7rem; border-radius: 999px;
+}
+
+.intro {
+  background: var(--escuro); color: #fff; padding: 3rem 1.5rem 4rem; text-align: center;
+}
+.hello { color: var(--laranja); margin: 0; font-weight: 600; }
+.intro h1 { font-size: clamp(2rem, 6vw, 3.2rem); margin: 0.3rem 0; }
+.headline { font-size: 1.2rem; margin: 0; color: #d6dbe8; }
+.bio { max-width: 38rem; margin: 1rem auto 0; color: #aeb6c9; }
+
+main { max-width: 62rem; margin: 0 auto; padding: 1rem 1.5rem 3rem; }
+section { padding: 1.5rem 0; }
+h2 { border-left: 5px solid var(--laranja); padding-left: 0.7rem; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
+.card {
+  background: #fff; border: 1px solid var(--borda); border-radius: 12px; padding: 1.2rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); }
+.card h3 { margin: 0 0 0.4rem; }
+.card p { margin: 0 0 0.8rem; color: var(--suave); }
+.tag {
+  display: inline-block; margin: 0 0.3rem 0.3rem 0; padding: 0.1rem 0.6rem; font-size: 0.8rem;
+  background: #fff1e5; color: #b24e00; border-radius: 6px;
+}
+
+.chips, .links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.chips li { background: var(--escuro); color: #fff; padding: 0.4rem 0.9rem; border-radius: 999px; font-size: 0.9rem; }
+.links a {
+  display: inline-block; padding: 0.5rem 1.1rem; border: 2px solid var(--laranja);
+  color: var(--escuro); border-radius: 8px; text-decoration: none; font-weight: 600;
+}
+.links a:hover, .links a:focus { background: var(--laranja); }
+
+.nota { color: var(--suave); font-size: 0.9rem; }
+.erro { background: #ffe9e9; color: #8a1c1c; padding: 1rem; border-radius: 8px; }
+.footer { text-align: center; padding: 1.5rem; color: var(--suave); border-top: 1px solid var(--borda); font-size: 0.9rem; }
